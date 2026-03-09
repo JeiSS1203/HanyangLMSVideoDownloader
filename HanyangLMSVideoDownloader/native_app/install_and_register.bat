@@ -87,11 +87,11 @@ echo [INFO] Native host manifest 생성 중...
 :: 6) 레지스트리에 네이티브 호스트 등록 (HKCU)
 ::--------------------------------------------
 echo [INFO] 레지스트리에 네이티브 호스트 등록 중...
-reg add "HKCU\Software\Google\Chrome\NativeMessagingHosts\com.hanyang.ffmpeg_downloader" ^
+:: reg add "HKCU\Software\Google\Chrome\NativeMessagingHosts\com.hanyang.ffmpeg_downloader" ^
     /ve /t REG_SZ /d "%MANIFEST_PATH%" /f >nul
 
 :: (모든 사용자 대상하려면 아래 줄을 사용할 수 있습니다)
-:: reg add "HKLM\Software\Google\Chrome\NativeMessagingHosts\com.hanyang.ffmpeg_downloader" /ve /t REG_SZ /d "%MANIFEST_PATH%" /f >nul
+reg add "HKLM\Software\Google\Chrome\NativeMessagingHosts\com.hanyang.ffmpeg_downloader" /ve /t REG_SZ /d "%MANIFEST_PATH%" /f >nul
 
 ::--------------------------------------------
 :: 완료 메시지
@@ -102,3 +102,4 @@ echo   - downloader.exe 위치: %TARGET_DIR%
 echo   - manifest 위치:        %MANIFEST_PATH%
 echo   - 레지스트리 등록 키:   HKCU\Software\Google\Chrome\NativeMessagingHosts\com.hanyang.ffmpeg_downloader
 pause
+
