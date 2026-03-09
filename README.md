@@ -3,6 +3,7 @@
 <p align="left">
 <img src="https://github.com/user-attachments/assets/2a3ad795-b889-42a9-9c08-d83904c4c055">
 </p>
+
 + _본 크롬 확장 프로그램은 개인정보를 수집하지 않습니다._
 + _다운로드 기능을 제공하기 위해 LMS API에 사용되는 쿠키 정보 등을 사용합니다._
 
