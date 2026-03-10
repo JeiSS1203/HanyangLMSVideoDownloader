@@ -1,6 +1,6 @@
 chrome.webRequest.onHeadersReceived.addListener(
   (details) => {
-    if (details.url.includes("screen.mp4")) {
+    if (details.url.includes("screen.mp4") || details.url.includes("ssmovie.mp4")) {
       chrome.runtime.sendNativeMessage(
         "com.hanyang.ffmpeg_downloader",
         { url: details.url },
