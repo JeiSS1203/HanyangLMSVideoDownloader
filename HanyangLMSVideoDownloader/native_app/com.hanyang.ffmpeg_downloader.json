@@ -1,9 +1,0 @@
-{
-  "name": "com.hanyang.ffmpeg_downloader",
-  "description": "Downloads video from Hanyang LMS",
-  "path": "C:\\Program Files\\HanyangDownloader\\downloader.exe",
-  "type": "stdio",
-  "allowed_origins": [
-    "chrome-extension://eckiakojbfplibfdddblfgembodbgfkl/"
-  ]
-}
